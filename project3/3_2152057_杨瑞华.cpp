@@ -163,7 +163,7 @@ inline void priorityQueue<T>::filterDown(int i)
     {
         int j = left(i);
         T temp = heap[i];
-        while (j < size - 1)
+        while (j <= size - 1)
         {
             if (j < size - 1 && heap[j] > heap[j + 1])
                 j++;
